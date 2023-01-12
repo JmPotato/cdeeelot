@@ -1,5 +1,8 @@
-/// 114.[flatten-binary-tree-to-linked-list](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list)
+// 114.[flatten-binary-tree-to-linked-list](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list)
+
 use std::{cell::RefCell, rc::Rc};
+
+use crate::Solution;
 
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
@@ -19,8 +22,6 @@ impl TreeNode {
         }
     }
 }
-
-struct Solution {}
 
 impl Solution {
     pub fn flatten(root: &mut Option<Rc<RefCell<TreeNode>>>) {
